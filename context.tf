@@ -1,5 +1,5 @@
 module "this" {
-  source  = "git::https://github.com/socratesdao/tf-module-null-label"
+  source  = "git::https://github.com/jon-butterworth/tf-module-null-label"
 
   enabled             = var.enabled
   company             = var.company
@@ -26,9 +26,9 @@ variable "context" {
   type = any
   default = {
     enabled             = true
-    company             = "socrates"
+    company             = null
     tenant              = null
-    region              = "eu-west-2"
+    region              = null
     stage               = null
     name                = null
     delimiter           = null
